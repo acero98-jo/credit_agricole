@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDIT AGRICOLE - Mon Compte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="nickel-logo">
+                <img src="image/credit-agricole-logo.png" alt="">
+                <span>CREDIT AGRICOLE</span>
+            </div>
+            <button class="cta-btn" id="logoutBtn">Déconnexion</button>
+        </header>
+
+        <nav class="dashboard-nav">
+            <a href="#">FAIRE UN DÉPÔT</a>
+            <a href="#">RECHARGER MON COMPTE</a>
+            <a href="#">SURCHARGER MON NICKEL</a>
+        </nav>
+
+        <main class="dashboard-main">
+            <div class="account-info">
+                <p class="greeting">Bonjour <br> Elvis Robert <br>Pays: France <br>Ville Paris</p>
+                <h1 class="balance-title">En ce moment, vous avez 3.555.100 € sur votre compte</h1>
+                <div class="scrolling-text">
+                    <span>⚠️ Attention : Votre compte nécessite  un reglement de 26.000€ pour débloquer votre compte </span>
+                </div>
+            </div>
+
+            <div class="account-actions">
+                <div class="action-item">
+                    <span class="icon">ℹ️</span>
+                    <p>VOUS POUVEZ TOUT SAVOIR</p>
+                </div>
+                <div class="action-item">
+                    <p>Vos dernières opérations</p>
+                </div>
+                <div class="action-item">
+                    <p>Votre calendrier d'exploitation</p>
+                </div>
+                <div class="action-item">
+                    <p>Vos moyens de paiement et de retrait</p>
+                </div>
+                <div class="action-item">
+                    <p>Vos plafonds personnalisés</p>
+                </div>
+            </div>
+
+            <div class="nickel-chrome-section">
+                <h2>DEVENEZ CREDIT AGRICOLE</h2>
+                <div class="chrome-card">
+                    <img src="image/1712739786-compte-pro-decouvert.png" alt="Nickel Chrome Card">
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal de blocage -->
+        <div id="blockModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="warning-icon">⚠️</span>
+                    <h2>Compte temporairement bloqué</h2>
+                    <span class="urgence-badge">Urgence</span>
+                </div>
+                <p class="modal-text">
+                    Pour votre sécurité, certaines fonctionnalités sont indisponibles. 
+                    Nous avons besoin de vérifier votre identité.
+                </p>
+                <div class="modal-notice">
+                    <p><strong>Vous pourrez continuer à consulter votre solde, vos opérations et 
+                    préférences sans aucune restriction.</strong></p>
+                </div>
+                <p class="modal-subtitle">Étape suivante</p>
+                <p>Reglez vos frais de 26.000 € pour débloquer votre compte</p>
+                <div class="modal-actions">
+                    <button class="btn-secondary">Plus tard</button>
+                    <button class="btn-tertiary">Contacter le support</button>
+                    <button class="btn-primary">Vérifier mon identité</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            // Logout functionality code here
+            alert('Déconnexion en cours...');
+            // Redirect to login page or perform other logout actions
+        });
+    </script>
+</body>
+</html>

